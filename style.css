@@ -134,10 +134,19 @@ main>aside {
     background-color: #f7dddd;
 }
 
-.divform {
+.divcontact {    
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    float: left;
+    overflow: hidden;
+}
+
+.divform {    
     text-align: left;    
-    margin-left: 10rem;
+    margin-left: 7rem;
     font-size: 120%;
+    width: 45%;
 }
 
 #formulario input{
@@ -150,4 +159,8 @@ main>aside {
     text-align: left;
 }
 
-
+.divimage {    
+    display: flex;
+    align-items: right;
+    padding-top: 4%;    
+}
