@@ -91,33 +91,25 @@ footer {
     margin-left: 50%;    
 }
 
-main>div {    
-    min-height: 180px;
-    overflow: auto;
-    margin: 0.5 rem; 
-    height: auto;
-    float: left;
-    max-width: auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
+@media (min-width: 412px) {
 .secciones {    
     min-height: 50px;
     overflow: auto;
     margin: 0.5 rem;
     padding: 3%;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;    
 }
 
 .art1 {    
-    min-height: 20px;  
+    min-height: 30px;  
     overflow: hidden; 
-    width: 37%;
+    width: 90%;
     text-align: center;     
     float: left;
-    margin-left: 6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 2%;     
 }
 .art1 :hover{
@@ -127,13 +119,14 @@ main>div {
 }
 
 .art2 {    
-    min-height: 20px;  
+    min-height: 30px;  
     overflow: hidden; 
-    width: 37%;
+    width: 90%;
     text-align: center;     
     float: left;
-    margin-left: 6rem;    
-    padding: 2%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2%;   
 }
 
 .art2 :hover{
@@ -141,4 +134,79 @@ main>div {
 	border-color: pink;
 	font-size: 20px;   
 }
+}
 
+@media (min-width: 820px) {    
+    .secciones {        
+        margin: 0.5 rem;     
+        padding-bottom: 7%;      
+        display: flex;
+        flex-direction: row;  
+        align-items: center; 
+    }
+    
+    .art1 {  
+        min-height: 10px;        
+        width: 100%;      
+        text-align: center; 
+    }
+    .art1 :hover{
+        background-color: #f7dddd;
+        border-color: pink;
+        font-size: 20px;   
+    }
+    
+    .art2 {    
+        min-height: 10px; 
+        width: 100%;         
+        text-align: center;        
+        margin-right: 2rem;
+    }
+    
+    .art2 :hover{
+        background-color: #f7dddd;
+        border-color: pink;
+        font-size: 20px;   
+    }
+}
+
+@media (min-width: 1366px) {       
+        .secciones {    
+            min-height: 50px;
+            overflow: auto;
+            margin: 0.5 rem;
+            padding: 3%;
+            float: left;
+        }
+        
+        .art1 {    
+            min-height: 20px;  
+            overflow: hidden; 
+            width: 37%;
+            text-align: center;     
+            float: left;
+            margin-left: 6rem;
+            padding: 2%;     
+        }
+        .art1 :hover{
+            background-color: #f7dddd;
+            border-color: pink;
+            font-size: 20px;   
+        }
+        
+        .art2 {    
+            min-height: 20px;  
+            overflow: hidden; 
+            width: 37%;
+            text-align: center;     
+            float: left;
+            margin-left: 6rem;    
+            padding: 2%;
+        }
+        
+        .art2 :hover{
+            background-color: #f7dddd;
+            border-color: pink;
+            font-size: 20px;   
+        }
+}
