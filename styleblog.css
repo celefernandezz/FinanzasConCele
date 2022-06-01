@@ -176,7 +176,9 @@ footer {
             overflow: auto;
             margin: 0.5 rem;
             padding: 3%;
-            float: left;
+            display: flex;
+            flex-direction: row;  
+            align-items: center; 
         }
         
         .art1 {    
