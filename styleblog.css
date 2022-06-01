@@ -92,48 +92,48 @@ footer {
 }
 
 @media (min-width: 412px) {
-.secciones {    
-    min-height: 50px;
-    overflow: auto;
-    margin: 0.5 rem;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;    
-}
+    .secciones {    
+        min-height: 50px;
+        overflow: auto;
+        margin: 0.5 rem;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;    
+    }
 
-.art1 {    
-    min-height: 30px;  
-    overflow: hidden; 
-    width: 90%;
-    text-align: center;     
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 2%;     
-}
-.art1 :hover{
-    background-color: #f7dddd;
-	border-color: pink;
-	font-size: 20px;   
-}
+    .art1 {    
+        min-height: 30px;  
+        overflow: hidden; 
+        width: 90%;
+        text-align: center;     
+        float: left;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 2%;     
+    }
+    .art1 :hover{
+        background-color: #f7dddd;
+        border-color: pink;
+        font-size: 20px;   
+    }
 
-.art2 {    
-    min-height: 30px;  
-    overflow: hidden; 
-    width: 90%;
-    text-align: center;     
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 2%;   
-}
+    .art2 {    
+        min-height: 30px;  
+        overflow: hidden; 
+        width: 90%;
+        text-align: center;     
+        float: left;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 2%;   
+    }
 
-.art2 :hover{
-    background-color: #f7dddd;
-	border-color: pink;
-	font-size: 20px;   
-}
+    .art2 :hover{
+        background-color: #f7dddd;
+        border-color: pink;
+        font-size: 20px;   
+    }
 }
 
 @media (min-width: 820px) {    
