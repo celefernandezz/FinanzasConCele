@@ -31,21 +31,21 @@ main {
 
 header {
     background-color: #EDECED;
-    font-size: 2%;
+    font-size: 2%;    
     border: 3px #F85454 solid;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;   
+    align-items: center;       
 }
 
 .header-logo {
-    width: auto;
+    min-width: 80%;
     overflow: hidden;
     display: flex;
-    justify-content: center;   
+    justify-content: center; 
 }
 
-.header-menubar {
+.header-menubar {   
     margin: 0.5rem 0.5rem  0.5rem 0rem;    
 }
 
@@ -123,7 +123,7 @@ main>aside {
     border: 3px #EDECED solid;
     background-color:#F85454;
     min-height: 50px;
-    min-width: auto;
+    min-width: 20px;
     text-align: center;  
     padding-left: 15%;
     padding-right: 15%;
@@ -134,33 +134,118 @@ main>aside {
     background-color: #f7dddd;
 }
 
-.divcontact {    
-    width: auto;
-    display: flex;
-    align-items: flex-start;
-    float: left;
-    overflow: hidden;
+@media (min-width: 412px) {
+    .divcontact {  
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        float: left;
+        overflow: hidden;
+        padding-left: 0%;
+        padding-right: 0%;
+        height: 100%;
+    }
+
+    .divform { 
+        width: fit-content;
+        text-align: left;    
+        padding-left: 6%;
+        font-size: 110%;    
+        overflow: hidden;    
+    }
+
+    #formulario input{
+        text-align: left;    
+        min-height: 50%;
+        max-width: 60%;
+        font-size: 90%;   
+    }
+
+    #formulario #mensaje {
+        text-align: left;
+    }
+
+    .divimage {          
+        display: flex; 
+        align-items: flex-end;       
+        padding-top: 2rem; 
+        overflow: hidden;   
+        
+    }
 }
 
-.divform {    
-    text-align: left;    
-    margin-left: 7rem;
-    font-size: 120%;
-    width: 45%;
+@media (min-width: 820px) {   
+    .divcontact {      
+        max-width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        float: left;
+        overflow: hidden;        
+    }
+
+    .divform {           
+        text-align: left;    
+        margin-left: 0.5rem;
+        font-size: 100%;
+        width: 70%;
+    }
+
+    #formulario input{
+        text-align: left;    
+        min-height: 50%;        
+        font-size: 100%; 
+        max-width: 90%;    
+    }
+
+    #formulario #mensaje {
+        text-align: left;
+        max-width: 100%;        
+    }
+
+    .divimage {            
+        display: flex; 
+        justify-content: center;
+        padding-right: 10rem;
+        padding-top: 5%;
+
+    }
 }
 
-#formulario input{
-    text-align: left;    
-    min-height: 50%;
-    font-size: 100%;   
-}
+@media (min-width: 1366px) {
+    .divcontact {
+        max-width: 1350px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        float: left;
+        overflow: hidden;      
+    }
 
-#formulario #mensaje {
-    text-align: left;
-}
+    .divform { 
+        width: 600px;
+        text-align: left;    
+        margin-left: 5rem;
+        font-size: 120%;            
+    }
 
-.divimage {    
-    display: flex;
-    align-items: right;
-    padding-top: 4%;    
+    #formulario input{
+        text-align: left;    
+        min-height: 50%;
+        font-size: 100%;   
+    }
+
+    #formulario #mensaje {
+        text-align: left;
+    }
+   
+    .divimage {           
+        display: flex;
+        align-items: right;
+        padding-top: 4%;             
+        width: fit-content;   
+    }
 }
